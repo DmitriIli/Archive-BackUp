@@ -120,12 +120,4 @@ def add_archive():
 						task_guid, file_path = ve.export(guid,item[0],item[1])
 						tasks[task_guid] = file_path
 
-
-app = create_app('App')
-app.create_module(
-		name = 'App',
-		icon_path="manual/en/gtk-dialog-important.png",
-	)
-
-
 host.activate_on_shortcut('F11',add_archive)
